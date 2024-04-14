@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto de JavaScript de Paginacion usando la API de PokeApi">
+    <link rel="icon" type="image/svg+xml" href="./Imagenes/images.png" />
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./pokedex.js" defer></script>
+    <title>POKEDEX API</title>
+
+</head>
+<body>
+    <header>
+        <img src="./Imagenes/images.png" alt="">
+        <div class="limit">
+            <p>Por Página</p>
+            <select id="limit" onchange="changePg(value);">
+                <option value="40">40</option>
+                <option value="60">60</option>
+                <option value="80">80</option>
+            </select>
+        </div>
+        <div>
+            <label for="search">Buscar pokemon:</label>
+            <input type="text" id="search">
+            <button id="btn-search">Buscar</button>
+        </div>
+        <div class="navigation">
+            <button onclick="prev()">«</button>
+            <div class="numbers"></div>
+            <button onclick="next()">»</button>
+        </div>
+        <section>
+            <div class="container">
+                <div class="pokemons"></div>
+            </div>
+        </section>
+        
+    </header>
+
+
+    <!-- <img src="./Imagenes/images.png" alt="">
+    <main>
+        <div class="container">
+            <h1>Pokedex</h1>
+            <ol id="listPokedex"></ol>
+        </div>
+    </main> -->
+    <script src="./pokedex.js" defer></script>
+
+</body>
+</html>
